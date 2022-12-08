@@ -11,7 +11,7 @@ body{
 }
 .card{
     margin: auto;
-    background-color: rgb(220, 245, 220);
+    background-color: #dcf5dc;
     width: 25rem;
     height: 25rem;
     padding: 2rem;
@@ -24,4 +24,10 @@ body{
 }
 .card img{
     width: 10rem;
+}
+.green-btn{
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    
+    
 }
