@@ -17,8 +17,7 @@ const card = document.querySelector(".card");
 //event listeners
 button.addEventListener("click", () => {
   show_advice();
-  if(color_index > 5)
-    color_index = 0;
+  if (color_index > 5) color_index = 0;
   card.style.backgroundColor = colors[color_index];
   color_index++;
 });
@@ -37,5 +36,7 @@ const fetch_advice = async () => {
 const show_advice = async () => {
   const card = document.querySelector("#advice");
   const advice = await fetch_advice();
-  card.innerText = advice;
+  card.innerText = advice
+    ? advice
+    : "Something went wrong! check your internet connection";
 };
